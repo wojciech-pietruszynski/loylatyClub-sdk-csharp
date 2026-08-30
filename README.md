@@ -355,6 +355,17 @@ loaltyClub-sdk-c#/
 dotnet test
 ```
 
-49 testów na serwerze-atrapie opartym na `TcpListener` — bez dodatkowych zależności poza
-xUnit. Pokrywają transport (ponowienia, odświeżanie tokenu, mapowanie błędów, kodowanie URI),
-serializację JSON oraz obie integracje. To te same przypadki, co w wersji dla Javy.
+**49 / 49 testów przechodzi** (.NET SDK 8.0.424, Windows 11). 49 testów na serwerze-atrapie
+opartym na `TcpListener` — bez dodatkowych zależności poza xUnit. Pokrywają transport
+(ponowienia, odświeżanie tokenu, mapowanie błędów, kodowanie URI), serializację JSON oraz
+obie integracje. To te same przypadki, co w wersji dla Javy.
+
+Stan weryfikacji:
+
+| Krok | Wynik |
+|---|---|
+| `dotnet build` (Debug i Release) | 0 błędów, 0 ostrzeżeń |
+| `dotnet test` | 49 / 49 |
+| `dotnet pack -c Release` | `LoyaltyClub.Sdk.1.0.0.nupkg` + `.snupkg` |
+
+Szczegóły uruchomienia i konfiguracji środowiska: [`URUCHOMIENIE-VSCODE.md`](URUCHOMIENIE-VSCODE.md).
