@@ -1,0 +1,12 @@
+{
+  "dotnet.defaultSolution": "LoyaltyClub.Sdk.sln",
+  "dotnet.unitTests.runSettingsPath": "",
+  "omnisharp.enableEditorConfigSupport": true,
+  "editor.formatOnSave": true,
+  "files.encoding": "utf8",
+  "files.eol": "\r\n",
+  "files.exclude": {
+    "**/bin": true,
+    "**/obj": true
+  }
+}

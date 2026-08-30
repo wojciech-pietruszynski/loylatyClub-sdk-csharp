@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Demo (LoyaltyClub.Sdk.Demo)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/samples/LoyaltyClub.Sdk.Demo/bin/Debug/net8.0/LoyaltyClub.Sdk.Demo.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/samples/LoyaltyClub.Sdk.Demo",
+      "console": "integratedTerminal",
+      "stopAtEntry": false,
+      "env": {
+        "LOYALTYCLUB_BASE_URL": "http://localhost:8089",
+        "LOYALTYCLUB_CUSTOMER": "CUST-000123",
+        "LOYALTYCLUB_STORE_USER": "kasa-01",
+        "LOYALTYCLUB_STORE_PASSWORD": "haslo",
+        "LOYALTYCLUB_ECOM_USER": "ecom-shop",
+        "LOYALTYCLUB_ECOM_PASSWORD": "haslo"
+      }
+    }
+  ]
+}
